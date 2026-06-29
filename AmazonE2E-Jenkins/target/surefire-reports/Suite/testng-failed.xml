@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Test(failed)" verbose="0">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="smokeSuite.AmazonE2E.Tc4_LoginSearchingWishListAddToCart">
+        <methods>
+          <include name="launchbrowser"/>
+          <include name="logintoCart"/>
+          <include name="quitBrowser"/>
+        </methods>
+      </class> <!-- smokeSuite.AmazonE2E.Tc4_LoginSearchingWishListAddToCart -->
+      <class name="smokeSuite.AmazonE2E.TC2_LoginToAmazonAndLogout">
+        <methods>
+          <include name="launchbrowser"/>
+          <include name="loginandLogout"/>
+          <include name="quitBrowser"/>
+        </methods>
+      </class> <!-- smokeSuite.AmazonE2E.TC2_LoginToAmazonAndLogout -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="2" failed="2" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Browser launched successfully]]>
+    </line>
+    <line>
+      <![CDATA[Login is done successfully]]>
+    </line>
+    <line>
+      <![CDATA[Test case is pass]]>
+    </line>
+    <line>
+      <![CDATA[Browser launched successfully]]>
+    </line>
+    <line>
+      <![CDATA[Login is done successfully]]>
+    </line>
+    <line>
+      <![CDATA[Browser launched successfully]]>
+    </line>
+    <line>
+      <![CDATA[Login is done successfully]]>
+    </line>
+    <line>
+      <![CDATA[Searching the product]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on the FirstProduct]]>
+    </line>
+    <line>
+      <![CDATA[Test case is pass]]>
+    </line>
+    <line>
+      <![CDATA[Browser launched successfully]]>
+    </line>
+    <line>
+      <![CDATA[Login is done successfully]]>
+    </line>
+    <line>
+      <![CDATA[Searching the product]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on the FirstProduct]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2026-06-29T19:33:08 IST" name="Suite" finished-at="2026-06-29T19:35:28 IST" duration-ms="139677">
+    <groups>
+    </groups>
+    <test started-at="2026-06-29T19:33:08 IST" name="Test" finished-at="2026-06-29T19:35:28 IST" duration-ms="139677">
+      <class name="smokeSuite.AmazonE2E.TC1_LoginToAmazon">
+        <test-method is-config="true" signature="launchbrowser(java.lang.String)[pri:0, instance:smokeSuite.AmazonE2E.TC1_LoginToAmazon@6025e1b6]" started-at="2026-06-29T19:33:08 IST" name="launchbrowser" finished-at="2026-06-29T19:33:12 IST" duration-ms="3405" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchbrowser -->
+        <test-method signature="validcredentials()[pri:0, instance:smokeSuite.AmazonE2E.TC1_LoginToAmazon@6025e1b6]" started-at="2026-06-29T19:33:12 IST" name="validcredentials" finished-at="2026-06-29T19:33:22 IST" duration-ms="10834" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser launched successfully]]>
+            </line>
+            <line>
+              <![CDATA[Login is done successfully]]>
+            </line>
+            <line>
+              <![CDATA[Test case is pass]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- validcredentials -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:smokeSuite.AmazonE2E.TC1_LoginToAmazon@6025e1b6]" started-at="2026-06-29T19:33:23 IST" name="quitBrowser" finished-at="2026-06-29T19:33:26 IST" duration-ms="3400" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- smokeSuite.AmazonE2E.TC1_LoginToAmazon -->
+      <class name="smokeSuite.AmazonE2E.TC2_LoginToAmazonAndLogout">
+        <test-method is-config="true" signature="launchbrowser(java.lang.String)[pri:0, instance:smokeSuite.AmazonE2E.TC2_LoginToAmazonAndLogout@55fe41ea]" started-at="2026-06-29T19:33:26 IST" name="launchbrowser" finished-at="2026-06-29T19:33:29 IST" duration-ms="2839" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchbrowser -->
+        <test-method signature="loginandLogout()[pri:0, instance:smokeSuite.AmazonE2E.TC2_LoginToAmazonAndLogout@55fe41ea]" started-at="2026-06-29T19:33:29 IST" name="loginandLogout" finished-at="2026-06-29T19:33:50 IST" duration-ms="20872" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.getClass()" because "exceptionDriver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getClass()" because "exceptionDriver" is null
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:86)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+at smokeSuite.AmazonE2E.HomePage.signout(HomePage.java:51)
+at smokeSuite.AmazonE2E.TC2_LoginToAmazonAndLogout.loginandLogout(TC2_LoginToAmazonAndLogout.java:29)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Browser launched successfully]]>
+            </line>
+            <line>
+              <![CDATA[Login is done successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginandLogout -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:smokeSuite.AmazonE2E.TC2_LoginToAmazonAndLogout@55fe41ea]" started-at="2026-06-29T19:33:50 IST" name="quitBrowser" finished-at="2026-06-29T19:33:53 IST" duration-ms="3355" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- smokeSuite.AmazonE2E.TC2_LoginToAmazonAndLogout -->
+      <class name="smokeSuite.AmazonE2E.Tc3_LoginSearchingClicking1stProduct">
+        <test-method is-config="true" signature="launchbrowser(java.lang.String)[pri:0, instance:smokeSuite.AmazonE2E.Tc3_LoginSearchingClicking1stProduct@fbd1f6]" started-at="2026-06-29T19:33:53 IST" name="launchbrowser" finished-at="2026-06-29T19:33:57 IST" duration-ms="3149" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchbrowser -->
+        <test-method signature="loginClicking1st()[pri:0, instance:smokeSuite.AmazonE2E.Tc3_LoginSearchingClicking1stProduct@fbd1f6]" started-at="2026-06-29T19:33:57 IST" name="loginClicking1st" finished-at="2026-06-29T19:34:26 IST" duration-ms="29466" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser launched successfully]]>
+            </line>
+            <line>
+              <![CDATA[Login is done successfully]]>
+            </line>
+            <line>
+              <![CDATA[Searching the product]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on the FirstProduct]]>
+            </line>
+            <line>
+              <![CDATA[Test case is pass]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginClicking1st -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:smokeSuite.AmazonE2E.Tc3_LoginSearchingClicking1stProduct@fbd1f6]" started-at="2026-06-29T19:34:30 IST" name="quitBrowser" finished-at="2026-06-29T19:34:33 IST" duration-ms="3401" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- smokeSuite.AmazonE2E.Tc3_LoginSearchingClicking1stProduct -->
+      <class name="smokeSuite.AmazonE2E.Tc4_LoginSearchingWishListAddToCart">
+        <test-method is-config="true" signature="launchbrowser(java.lang.String)[pri:0, instance:smokeSuite.AmazonE2E.Tc4_LoginSearchingWishListAddToCart@1ce24091]" started-at="2026-06-29T19:34:33 IST" name="launchbrowser" finished-at="2026-06-29T19:34:36 IST" duration-ms="2589" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchbrowser -->
+        <test-method signature="logintoCart()[pri:0, instance:smokeSuite.AmazonE2E.Tc4_LoginSearchingWishListAddToCart@1ce24091]" started-at="2026-06-29T19:34:36 IST" name="logintoCart" finished-at="2026-06-29T19:35:24 IST" duration-ms="48126" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//h1[@class='a-size-medium-plus a-color-base sw-atc-text a-text-bold']"}
+  (Session info: chrome=149.0.7827.199)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.44.0', revision: 'da2039b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8ad26576d439f4963e1d4dd0c6042b7c, findElement {value=//h1[@class='a-size-medium-plus a-color-base sw-atc-text a-text-bold'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.199, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\geeta\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57328}, goog:processID: 51644, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57328/devtoo..., se:cdpVersion: 149.0.7827.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8ad26576d439f4963e1d4dd0c6042b7c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h1[@class='a-size-medium-plus a-color-base sw-atc-text a-text-bold']"}
+  (Session info: chrome=149.0.7827.199)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.44.0', revision: 'da2039b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8ad26576d439f4963e1d4dd0c6042b7c, findElement {value=//h1[@class='a-size-medium-plus a-color-base sw-atc-text a-text-bold'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.199, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\geeta\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57328}, goog:processID: 51644, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57328/devtoo..., se:cdpVersion: 149.0.7827.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8ad26576d439f4963e1d4dd0c6042b7c
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:224)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:415)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy15.getText(Unknown Source)
+at smokeSuite.AmazonE2E.ProductDetailsPage.verifytheTextProductPage(ProductDetailsPage.java:55)
+at smokeSuite.AmazonE2E.Tc4_LoginSearchingWishListAddToCart.logintoCart(Tc4_LoginSearchingWishListAddToCart.java:43)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Browser launched successfully]]>
+            </line>
+            <line>
+              <![CDATA[Login is done successfully]]>
+            </line>
+            <line>
+              <![CDATA[Searching the product]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on the FirstProduct]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- logintoCart -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:smokeSuite.AmazonE2E.Tc4_LoginSearchingWishListAddToCart@1ce24091]" started-at="2026-06-29T19:35:24 IST" name="quitBrowser" finished-at="2026-06-29T19:35:28 IST" duration-ms="3421" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- smokeSuite.AmazonE2E.Tc4_LoginSearchingWishListAddToCart -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
